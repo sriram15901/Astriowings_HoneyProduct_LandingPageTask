@@ -1,0 +1,518 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #f8f9fa; /* Light background */
+  padding: 10px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item {
+  margin-right: 15px; /* Adds spacing between menu items */
+}
+
+/* Default Styles */
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333 !important;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  background: none; /* Removes background */
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: black;
+  color: white !important;
+  transition: 0.3s ease-in-out;
+}
+
+/* Mobile View: Disable Background Until Hovered */
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    background: none; /* No background on mobile */
+    color: #333 !important;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: black;
+    color: white !important;
+  }
+}
+
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  border-radius: 20px;
+  padding: 8px 15px;
+  width: 200px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+  width: 250px;
+  border-color: #ffcc00;
+}
+
+.search-bar button {
+  border-radius: 20px;
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.search-bar button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* Carousel Images */
+.hero-img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Remove default Bootstrap carousel indicators */
+.carousel-indicators {
+  display: none;
+}
+
+/* Dark Overlay for Readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Centered Overlay Content */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  z-index: 10;
+}
+
+/* Buy Now Button */
+.btn-dark {
+  background-color: #f6a700;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.btn-dark:hover {
+  background-color: #e69500;
+  transform: scale(1.05);
+}
+
+/* Hide Bootstrap Carousel Controls When Not Hovered */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hero:hover .carousel-control-prev,
+.hero:hover .carousel-control-next {
+  opacity: 1;
+}
+
+
+/* Shop Now Button Styling */
+.btn-dark {
+  background-color: #f6a700;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.btn-dark:hover {
+  background-color: #e69500;
+  transform: scale(1.05);
+}
+
+/* Logo Styling */
+.logo {
+  height: 100px; /* Adjust size as needed */
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 10%; /* Optional: Makes the logo 
+  circular*/
+  background: none;
+}
+
+/* Center Navbar Items */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+/* Heading with Highlight */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.highlight {
+  color: #f6a700; /* Honey color */
+}
+
+/* About Description */
+.about-description {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+/* About Images */
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-img:hover {
+  transform: scale(1.1);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 60px 20px;
+  background-color: #fdf3c1;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Feature Boxes */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.feature h4 {
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.feature p {
+  color: #555;
+}
+
+/* Testimonials */
+.testimonials-heading {
+  margin-top: 50px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.testimonial {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  transition: 0.3s;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Our Products Section */
+.our-products {
+  padding: 50px 0;
+  background: white; /* Full section background */
+}
+
+.our-products h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 30px; /* Space between items */
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Product Items */
+.product-item {
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+  color: white;
+  min-width: 300px;
+}
+
+/* Background Colors */
+.black {
+  background: black;
+  color: white;
+}
+
+.gold {
+  background: gold;
+  color: black;
+}
+
+/* Product Images */
+.product-item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Headings */
+.product-item h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Paragraph */
+.product-item p {
+  font-size: 1rem;
+  padding: 0 15px;
+}
+
+/* Hover Effect - Switch Colors */
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.black:hover {
+  background: gold;
+  color: black;
+}
+
+.gold:hover {
+  background: black;
+  color: white;
+}
+
+.product-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .product-grid {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
+
+/* Footer Section */
+.footer {
+  background: black;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Footer Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Footer Titles */
+.footer-item h4 {
+  font-size: 1.3rem;
+  color: gold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Quick Links */
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-item ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Social Media Static Icons */
+.static-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Icon Styling */
+.static-social-icons i {
+  font-size: 2.5rem; /* Bigger for visibility */
+  color: gold;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.static-social-icons i:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-grid {
+      grid-template-columns: 1fr;
+  }
+  .static-social-icons {
+      font-size: 2rem; /* Slightly smaller for mobile */
+  }
+}

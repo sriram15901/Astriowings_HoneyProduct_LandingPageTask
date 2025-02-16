@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Favicon (Logo in Tab) -->
+    <link rel="icon" type="image/png" href="logo-removebg-preview.png">
+    <!-- Font Awesome (For Social Media Icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container">
+            <!-- Logo + Brand Name -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <img src="logo-removebg-preview.png" alt="HoneyCo Logo" class="logo"> HoneyCo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex ms-auto search-bar">
+                    <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="honey8.jpg" class="d-block w-100 hero-img" alt="Organic Honey">
+                </div>
+                <div class="carousel-item">
+                    <img src="honey7.jpg" class="d-block w-100 hero-img" alt="Pure Honey">
+                </div>
+                <div class="carousel-item">
+                    <img src="honey6.jpg" class="d-block w-100 hero-img" alt="Natural Honey">
+                </div>
+                <div class="carousel-item">
+                    <img src="honey4.jpg" class="d-block w-100 hero-img" alt="Natural Honey">
+                </div>
+                <div class="carousel-item">
+                    <img src="honey5.jpg" class="d-block w-100 hero-img" alt="Natural Honey">
+                </div>
+            </div>
+            <!-- Carousel Controls (Left & Right) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    
+        <!-- Overlay Content (Title & Button) -->
+        <div class="hero-content text-center">
+            <h1>Pure Organic Honey</h1>
+            <p>Natural & Healthy | 100% Organic</p>
+            <button class="btn btn-dark mt-3">Buy Now</button>
+        </div>
+    </header>
+    
+    
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container text-center">
+            <h2 class="about-title">🍯 About <span class="highlight">Our Pure Honey</span></h2>
+            <p class="about-description">
+                At <strong>Organic Honey Farms</strong>, we believe in delivering nature’s purest golden nectar. 
+                Our honey is 100% organic, unprocessed, and packed with natural health benefits. 
+                Experience the taste of nature in every spoonful! 🐝🌿
+            </p>
+            <div class="about-images">
+                <img src="honey9.jpg" alt="Honey Hive" class="about-img">
+                <img src="honey10.jpg" alt="Fresh Honey Jar" class="about-img">
+                <img src="honey11.jpg" alt="Honey Bees" class="about-img">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container text-center">
+            <h2>Why Choose Us?</h2>
+            <p class="subtitle">Discover the purity of nature in every drop of honey.</p>
+    
+            <div class="features">
+                <div class="feature">
+                    <img src="honey12.jpg" alt="Pure Honey">
+                    <h4>100% Pure & Organic</h4>
+                    <p>Harvested naturally, free from additives and chemicals.</p>
+                </div>
+    
+                <div class="feature">
+                    <img src="honey15.jpg" alt="Sustainable Beekeeping">
+                    <h4>Sustainably Harvested</h4>
+                    <p>We practice ethical beekeeping to protect our bee colonies.</p>
+                </div>
+    
+                <div class="feature">
+                    <img src="honey16.jpg" alt="Quality Assurance">
+                    <h4>Premium Quality</h4>
+                    <p>Every jar undergoes strict quality checks for taste and purity.</p>
+                </div>
+            </div>
+    
+            <h3 class="testimonials-heading">What Our Customers Say</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"The best honey I've ever tasted! It's pure, delicious, and rich in flavor. Highly recommend!"</p>
+                    <span>- Priya S.</span>
+                </div>
+    
+                <div class="testimonial">
+                    <p>"I love that this honey is ethically sourced. Great for my health and the environment!"</p>
+                    <span>- Rahul K.</span>
+                </div>
+    
+                <div class="testimonial">
+                    <p>"This honey is a game-changer! Perfect for my tea and desserts. Five stars!"</p>
+                    <span>- Ananya M.</span>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Our Products Section -->
+<section class="our-products">
+    <div class="container text-center">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item black">
+                <img src="honey17.jpg" alt="Mountain Honey">
+                <h4>Mountain Honey</h4>
+                <p>Harvested from pristine mountain regions, rich in natural nutrients.</p>
+            </div>
+            <div class="product-item gold">
+                <img src="honey18.jpg" alt="Himalayan Honey">
+                <h4>Himalayan Honey</h4>
+                <p>Pure organic honey sourced from high-altitude Himalayan forests.</p>
+            </div>
+            <div class="product-item black">
+                <img src="honey20.webp" alt="Forest Honey">
+                <h4>Forest Honey</h4>
+                <p>Wild and natural honey extracted from deep forest beehives.</p>
+            </div>
+            <div class="product-item gold">
+                <img src="honey21.webp" alt="Acacia Honey">
+                <h4>Acacia Honey</h4>
+                <p>Light in color and taste, sourced from acacia flowers for mild sweetness.</p>
+            </div>
+            <div class="product-item black">
+                <img src="honey22.webp" alt="Wildflower Honey">
+                <h4>Wildflower Honey</h4>
+                <p>A mix of nectar from wildflowers, offering a unique and rich flavor.</p>
+            </div>
+            <div class="product-item gold">
+                <img src="honey24.jpg" alt="Manuka Honey">
+                <h4>Manuka Honey</h4>
+                <p>Known for its medicinal properties, sourced from Manuka tree blossoms.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="container my-5 text-center">
+        <h2>What Our Customers Say</h2>
+        <p>"Best honey ever! Absolutely love it." - Sarah</p>
+        <p>"Pure and natural. Highly recommended!" - James</p>
+    </section> -->
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Contact Info -->
+            <div class="footer-item">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Street, Chennai, India</p>
+                <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> contact@yourcompany.com</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-item">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <!-- Follow Us (Static Icons) -->
+            <div class="footer-item">
+                <h4>Follow Us</h4>
+                <div class="static-social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="footer-bottom">© 2024 Your Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
