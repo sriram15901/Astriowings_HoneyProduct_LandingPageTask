@@ -210,15 +210,16 @@ body {
 
 /* About Section */
 .about-section {
-  padding: 80px 20px;
+  padding: 60px 20px;
   background-color: #fff;
+  text-align: center;
 }
 
 /* Heading with Highlight */
 .about-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #333;
 }
 
@@ -228,22 +229,27 @@ body {
 
 /* About Description */
 .about-description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #555;
   max-width: 700px;
   margin: 0 auto 30px;
+  line-height: 1.6;
+  padding: 0 15px;
 }
 
 /* About Images */
 .about-images {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
+  padding: 10px;
 }
 
 .about-img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   border-radius: 10px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
@@ -251,6 +257,27 @@ body {
 
 .about-img:hover {
   transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .about-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img {
+    max-width: 90%;
+  }
 }
 
 /* Why Choose Us Section */
@@ -516,3 +543,4 @@ body {
       font-size: 2rem; /* Slightly smaller for mobile */
   }
 }
+
